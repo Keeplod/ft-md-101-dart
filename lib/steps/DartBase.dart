@@ -1,4 +1,5 @@
 import 'package:ft_md_101_dart/ClassInstance.dart';
+import 'package:ft_md_101_dart/steps/utils/DartMethod.dart';
 import 'package:ft_md_101_dart/steps/utils/DartPackage.dart';
 
 class DartBase{
@@ -9,6 +10,7 @@ class DartBase{
     _stepDataType();
     _stepClassInstance();
     _stepPackage();
+    _stepMethods();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
@@ -38,5 +40,10 @@ class DartBase{
   void _stepPackage(){
     DartPackage dp = DartPackage();
     dp.run();
+  }
+
+  void _stepMethods(){
+    var dm = DartMethod();
+    dm.run();
   }
 }
