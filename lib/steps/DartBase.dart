@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:ft_md_101_dart/ClassInstance.dart';
 import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartMethod.dart';
@@ -15,6 +17,7 @@ class DartBase{
     _stepMethods();
     _stepSignature();
     _stepInheritance();
+    _stepConditionalOperator();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
@@ -63,5 +66,33 @@ class DartBase{
   void _stepInheritance(){
     var dc = DartChild();
     dc.run();
+  }
+
+  void _stepConditionalOperator(){
+    var random = Random();
+    var intVar = random.nextInt(10);
+    var maxVar = 5;
+
+    print("_stepConditionalOperator: IntVar is $intVar");
+
+    if (intVar > maxVar){
+      print("_stepConditionalOperator: $intVar > $maxVar");
+    }
+    if (intVar < maxVar){
+      print("_stepConditionalOperator: $intVar < $maxVar");
+    }
+    if (intVar != maxVar){
+      print("_stepConditionalOperator: $intVar != $maxVar");
+    }
+
+    if (intVar == maxVar){
+      print("_stepConditionalOperator: $intVar == $maxVar");
+    }
+
+    if (intVar % 2 == 0){
+      print("_stepConditionalOperator: $intVar is event");
+    }else{
+      print("_stepConditionalOperator: $intVar is odd");
+    }
   }
 }
