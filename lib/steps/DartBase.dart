@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:ft_md_101_dart/ClassInstance.dart';
 import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
+import 'package:ft_md_101_dart/steps/utils/DartConstructor.dart';
 import 'package:ft_md_101_dart/steps/utils/DartMethod.dart';
 import 'package:ft_md_101_dart/steps/utils/DartPackage.dart';
 import 'package:ft_md_101_dart/steps/utils/DartSignature.dart';
@@ -21,6 +22,7 @@ class DartBase{
     _stepArray();
     _stepLoog();
     _stepSwitch();
+    _stepConstructor();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
@@ -92,7 +94,6 @@ class DartBase{
       print("_stepConditionalOperator: $intVar is odd");
     }
   }
-
   void _stepArray(){
     var array = [];
     array.add(1);
@@ -127,7 +128,6 @@ class DartBase{
     });
 
   }
-
   void _stepLoog(){
     List<int> intArray = [];
     for(int i = 0; i<100; i++){
@@ -143,7 +143,6 @@ class DartBase{
     }
     print("_stepLoog: $onlyEven" );
   }
-
   void _stepSwitch(){
     var intVal = Random().nextInt(5);
     switch(intVal){
@@ -156,5 +155,12 @@ class DartBase{
       default:
         print("_stepSwitch: default - $intVal");
     }
+  }
+  void _stepConstructor(){
+    DartConstructor dc = DartConstructor(1,"str");
+    dc.run();
+
+    DartConstructor dc1 = DartConstructor(1,"str", 1.1);
+    dc1.run();
   }
 }
