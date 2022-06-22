@@ -18,11 +18,11 @@ class DartBase{
     _stepSignature();
     _stepInheritance();
     _stepConditionalOperator();
+    _stepArray();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
   }
-
   void _stepDataType(){
     String str = "sdf";
     int intVar = 1;
@@ -38,22 +38,18 @@ class DartBase{
     DartBase db = DartBase();
     db._stepConf();
   }
-
   void _stepClassInstance(){
     ClassInstance ci = ClassInstance();
     ci.run();
   }
-
   void _stepPackage(){
     DartPackage dp = DartPackage();
     dp.run();
   }
-
   void _stepMethods(){
     var dm = DartMethod();
     dm.run();
   }
-
   void _stepSignature(){
     var ds = DartSignature("first var", "second var");
     ds.run();
@@ -67,7 +63,6 @@ class DartBase{
     var dc = DartChild();
     dc.run();
   }
-
   void _stepConditionalOperator(){
     var random = Random();
     var intVar = random.nextInt(10);
@@ -94,5 +89,40 @@ class DartBase{
     }else{
       print("_stepConditionalOperator: $intVar is odd");
     }
+  }
+
+  void _stepArray(){
+    var array = [];
+    array.add(1);
+    array.add("String value");
+
+    print("_stepArray: $array");
+
+    List<String> stringArray = [];
+    stringArray = List.filled(0, "fill");
+    stringArray = List<String>.empty();
+    stringArray = <String>[];
+
+    stringArray.add("value");
+    print("_stepArray: $stringArray");
+
+    stringArray.removeAt(0);
+    print("_stepArray: $stringArray");
+
+    stringArray.add("value");
+    print("_stepArray: $stringArray");
+    stringArray.remove("value");
+    print("_stepArray: $stringArray");
+
+    stringArray.add("value");
+    stringArray.add("value");
+    stringArray.add("value");
+    stringArray.add("value");
+    stringArray.add("value");
+
+    stringArray.forEach ((e) => {
+      print("_stepArray: $e")
+    });
+
   }
 }
