@@ -5,6 +5,8 @@ import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartConstructor.dart';
 import 'package:ft_md_101_dart/steps/utils/DartEnum.dart';
 import 'package:ft_md_101_dart/steps/utils/DartFinal.dart';
+import 'package:ft_md_101_dart/steps/utils/DartInterfaceChild.dart';
+import 'package:ft_md_101_dart/steps/utils/DartInterfaceParent.dart';
 import 'package:ft_md_101_dart/steps/utils/DartMethod.dart';
 import 'package:ft_md_101_dart/steps/utils/DartPackage.dart';
 import 'package:ft_md_101_dart/steps/utils/DartSignature.dart';
@@ -27,6 +29,7 @@ class DartBase{
     _stepConstructor();
     _stepFinal();
     _stepDartEnum();
+    _stepInterface();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
@@ -174,5 +177,13 @@ class DartBase{
   void _stepDartEnum(){
     var status = DartEnum.NEW;
     print("_stepDartEnum; $status");
+  }
+
+  void _stepInterface(){
+    DartInterfaceChild dic = DartInterfaceChild();
+    dic.printMe();
+
+    DartInterfaceParent dip = DartInterfaceParent();
+    dip.printMe();
   }
 }
