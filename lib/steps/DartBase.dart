@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:ft_md_101_dart/ClassInstance.dart';
+import 'package:ft_md_101_dart/steps/tasks/Task1.dart';
 import 'package:ft_md_101_dart/steps/utils/DartAbstractChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartConstructor.dart';
@@ -15,25 +16,27 @@ import 'package:ft_md_101_dart/steps/utils/DartSignature.dart';
 
 class DartBase{
   void run(){
-    print("DartBase: hello world!");
+    //print("DartBase: hello world!");
 
-    _stepConf();
-    _stepDataType();
-    _stepClassInstance();
-    _stepPackage();
-    _stepMethods();
-    _stepSignature();
-    _stepInheritance();
-    _stepConditionalOperator();
-    _stepArray();
-    _stepLoog();
-    _stepSwitch();
-    _stepConstructor();
-    _stepFinal();
-    _stepDartEnum();
-    _stepInterface();
-    _stepAbstarct();
-    _stepException();
+    //_stepConf();
+    //_stepDataType();
+    //_stepClassInstance();
+    //_stepPackage();
+    //_stepMethods();
+    //_stepSignature();
+    //_stepInheritance();
+    //_stepConditionalOperator();
+    //_stepArray();
+    //_stepLoog();
+    //_stepSwitch();
+    //_stepConstructor();
+    //_stepFinal();
+    //_stepDartEnum();
+    //_stepInterface();
+    //_stepAbstarct();
+    //_stepException();
+
+    Task1().run();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
