@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:ft_md_101_dart/ClassInstance.dart';
 import 'package:ft_md_101_dart/steps/utils/DartChild.dart';
 import 'package:ft_md_101_dart/steps/utils/DartConstructor.dart';
+import 'package:ft_md_101_dart/steps/utils/DartEnum.dart';
 import 'package:ft_md_101_dart/steps/utils/DartFinal.dart';
 import 'package:ft_md_101_dart/steps/utils/DartMethod.dart';
 import 'package:ft_md_101_dart/steps/utils/DartPackage.dart';
@@ -25,6 +26,7 @@ class DartBase{
     _stepSwitch();
     _stepConstructor();
     _stepFinal();
+    _stepDartEnum();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
@@ -168,5 +170,9 @@ class DartBase{
   void _stepFinal(){
     DartFinal df = DartFinal();
     df.run();
+  }
+  void _stepDartEnum(){
+    var status = DartEnum.NEW;
+    print("_stepDartEnum; $status");
   }
 }
