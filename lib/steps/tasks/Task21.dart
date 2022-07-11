@@ -10,6 +10,7 @@ class Task21 extends TaskInterface{
   @override
   void run() {
     double Celsius = 36;
+
     print("Градусы по Цельсию: " + Celsius.toString());
     print("Градусы по Кельвину: " + BaseConverter.convertFahrenheit(Celsius).toString());
     print("Градусы по Фаренгейту: " + BaseConverter.convertKelvin(Celsius).toString());
