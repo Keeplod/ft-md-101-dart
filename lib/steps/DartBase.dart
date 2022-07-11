@@ -18,6 +18,7 @@ import 'package:ft_md_101_dart/steps/tasks/Task22.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task23.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task24.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task25.dart';
+import 'package:ft_md_101_dart/steps/tasks/Task26.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task2.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task3.dart';
 import 'package:ft_md_101_dart/steps/tasks/Task4.dart';
@@ -84,7 +85,8 @@ class DartBase{
     //Task22().run();
     //Task23().run();
     //Task24().run();
-    Task25().run();
+    //Task25().run();
+    Task26().run();
   }
   void _stepConf(){
     print("_stepConf: This is step 1");
